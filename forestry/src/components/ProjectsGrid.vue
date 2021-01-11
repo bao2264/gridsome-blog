@@ -1,7 +1,7 @@
 <template>
   <div class="projects">
     <div class="project" v-for="item in projects" :key="item.id">
-      <g-link to="/" class="project-link">
+      <g-link :to="item.path" class="project-link">
         <g-image :src="item.cover" :alt="item.title" class="thumbnail" />
         <h3 class="project-title">{{ item.title }}</h3>
         <div class="categories">
@@ -42,6 +42,7 @@ export default {
   text-decoration: none;
 }
 .thumbnail {
+  width: 100%;
   height: 560px;
   object-fit: cover;
   transition: all 0.15s ease;
