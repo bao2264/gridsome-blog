@@ -6,6 +6,8 @@
 
 module.exports = {
   siteName: "Gridsome",
+  host: "0.0.0.0",
+  port: 1338,
   templates: {
     StrapiProject: [
       {
